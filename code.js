@@ -1,6 +1,7 @@
 function sub(a, b) {
     return a - b;
 }
+
 function add(a, b) {
     return a + b;
 }
@@ -27,7 +28,7 @@ console.log(power(2, 8));
 function factorial(a) {
     product3 = a;
     for (let i = a; i >= 2; i--) {
-        product2 = sub(i, 1)
+        product2 = add(i, -1)
         product3 = multiply(product3, product2)
     }
     return product3;
