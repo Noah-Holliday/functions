@@ -26,10 +26,9 @@ function power(a, b) {
 console.log(power(2, 8));
 
 function factorial(a) {
-    product3 = a;
-    for (let i = a; i >= 2; i--) {
-        product2 = add(i, -1)
-        product3 = multiply(product3, product2)
+    product3 = 1;
+    for (let i = 1; i <= a; i++) {
+        product3 = multiply(product3, i)
     }
     return product3;
 }
